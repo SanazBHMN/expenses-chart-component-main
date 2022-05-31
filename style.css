@@ -12,6 +12,14 @@
 
   /* font */
   --font-size: 18px;
+  --font-weight-400: 400;
+  --font-weight-800: 800;
+
+  /* sizes */
+  --padding-x: 1.3rem;
+  --padding-y: 1.5rem;
+  --margin: 8px;
+  --border-radius: 1rem;
 }
 
 * {
@@ -24,4 +32,26 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: var(--font-size);
   background-color: var(--color-main-background);
+}
+
+/* Chart's top section */
+.chart-container {
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-chart-background);
+}
+
+.chart-top-balance {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-x) var(--padding-y);
+}
+
+.title {
+  font-size: calc(var(--font-size) - 2px);
+  margin-bottom: var(--margin);
+}
+
+.balance {
+  font-weight: var(--font-weight-800);
 }
