@@ -10,3 +10,9 @@
   --color-text-primary: hsl(25, 47%, 15%);
   --color-text-primary-light: hsl(28, 10%, 53%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
