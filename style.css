@@ -1,0 +1,12 @@
+:root {
+  --color-primary: hsl(10, 79%, 65%);
+  --color-secondary: hsl(186, 34%, 60%);
+
+  /* Named colors more specifically in order to diffrenciate */
+  --color-main-background: hsl(27, 66%, 92%);
+  --color-chart-background: hsl(33, 100%, 98%);
+
+  /* text colors */
+  --color-text-primary: hsl(25, 47%, 15%);
+  --color-text-primary-light: hsl(28, 10%, 53%);
+}
