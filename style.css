@@ -20,6 +20,7 @@
   --padding-y: 1.5rem;
   --margin: 8px;
   --border-radius: 1rem;
+  --gap: 10px;
 }
 
 * {
@@ -36,12 +37,14 @@ body {
 
 /* Chart's top section */
 .chart-container {
-  background-color: var(--color-primary);
-  border-radius: var(--border-radius);
   color: var(--color-chart-background);
+  display: grid;
+  grid-gap: var(--gap);
 }
 
 .chart-top-balance {
+  border-radius: var(--border-radius);
+  background-color: var(--color-primary);
   display: flex;
   justify-content: space-between;
   padding: var(--padding-x) var(--padding-y);
@@ -54,4 +57,10 @@ body {
 
 .balance {
   font-weight: var(--font-weight-800);
+}
+
+/* Chart */
+.chart {
+  background-color: var(--color-chart-background);
+  color: var(--color-text-primary);
 }
