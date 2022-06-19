@@ -36,6 +36,14 @@ body {
   background-color: var(--color-main-background);
 }
 
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Common styles */
 .chart-top-balance,
 .chart {
@@ -50,6 +58,7 @@ body {
 
 /* Chart's top section */
 .chart-container {
+  width: 92%;
   color: var(--color-chart-background);
   display: grid;
   grid-gap: var(--gap);
