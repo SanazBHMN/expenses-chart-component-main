@@ -13,6 +13,7 @@
   /* font */
   --font-size: 18px;
   --font-weight-400: 400;
+  --font-weight-700: 700;
   --font-weight-800: 800;
 
   /* sizes */
@@ -35,6 +36,18 @@ body {
   background-color: var(--color-main-background);
 }
 
+/* Common styles */
+.chart-top-balance,
+.chart {
+  border-radius: var(--border-radius);
+  padding: var(--padding-x) var(--padding-y);
+}
+
+.title {
+  font-size: calc(var(--font-size) - 2px);
+  margin-bottom: var(--margin);
+}
+
 /* Chart's top section */
 .chart-container {
   color: var(--color-chart-background);
@@ -43,16 +56,9 @@ body {
 }
 
 .chart-top-balance {
-  border-radius: var(--border-radius);
   background-color: var(--color-primary);
   display: flex;
   justify-content: space-between;
-  padding: var(--padding-x) var(--padding-y);
-}
-
-.title {
-  font-size: calc(var(--font-size) - 2px);
-  margin-bottom: var(--margin);
 }
 
 .balance {
@@ -63,4 +69,31 @@ body {
 .chart {
   background-color: var(--color-chart-background);
   color: var(--color-text-primary);
+}
+
+.overview {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview .last-month-expense {
+  align-self: flex-end;
+}
+
+.chart-title {
+  font-weight: var(--font-weight-700);
+}
+
+.chart .title {
+  color: var(--color-text-primary-light);
+}
+
+.current-month-expense .value {
+  font-size: larger;
+  font-weight: var(--font-weight-700);
+}
+
+.last-month-expense .value {
+  font-weight: var(--font-weight-700);
 }
